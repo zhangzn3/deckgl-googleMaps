@@ -1,0 +1,35 @@
+{
+  "name": "leyi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist && mkdir dist",
+    "build:dll": "npm run clean && webpack --config ./webpack.dll.config.js",
+    "build": "webpack && webpack-dev-server --inline"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "buble-loader": "^0.4.0",
+    "css-loader": "^0.28.3",
+    "csv-loader": "^2.1.1",
+    "dsv-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "2.1.0-beta.10"
+  },
+  "dependencies": {
+    "deck.gl": "^4.0.0",
+    "google-map-react": "^0.24.0",
+    "html-withimg-loader": "^0.1.16",
+    "jquery": "^1.11.3",
+    "luma.gl": "^3.0.0",
+    "rbush": "^2.0.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
